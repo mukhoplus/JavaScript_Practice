@@ -53,3 +53,29 @@
 - 함수는 동작 하나만 담당해야 한다.
     - 함수가 길어지면 분리해 작성하라.
         - 테스트와 디버깅, 이해하기 쉽다.
+
+## 함수 표현식
+
+```javascript
+// 일반 함수
+function sum(a, b){
+    return a + b;
+}
+
+// 함수 표현식
+let sum = function(a, b){
+    return a + b;
+}
+
+// 화살표 함수
+let sum = (a, b) => a + b;
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+}
+```
+
+## 콜백 함수(Callback Function)
+
+- 파라미터로 함수를 전달하는 함수
+- 함수의 내부에서, 파라미터로 전달받은 함수를 실행하는 함수
