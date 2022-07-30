@@ -12,6 +12,14 @@ const question = question => {
             return resolve(answer);
         });
     });
+    /*
+    return new Promise(resolve =>{
+            rl.on('line', answer => {
+            rl.close();
+            return resolve(answer);
+        });
+    });
+    */
 };
 
 async function main() {
