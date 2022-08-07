@@ -21,13 +21,11 @@ setTimeout은 WebAPI를 사용하기 때문이다.
 // Callback Function
 function cb(callback){
     setTimeout(function(){
-        callback();
+        callback('묵호');
     }, 3000);
 }
-function print(){
-    console.log('묵호');
+function print(data){
+    console.log(data);
 }
 
-console.log('Hello');
 cb(print);
-console.log('Bye');
